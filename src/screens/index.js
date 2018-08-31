@@ -34,3 +34,23 @@ const AppNavigator = createSwitchNavigator(
     initialRouteName: "Splash"
   }
 );
+
+class Navigation extends Component {
+  state = {};
+
+  componentDidMount() {
+    this.checkAuth();
+  }
+
+  checkAuth = () => {
+    setTimeout(() => {
+      this.props.navigation.navigate("Auth");
+    }, 2000);
+  };
+
+  render() {
+    return <AppNavigator />;
+  }
+}
+
+export default Navigation;
