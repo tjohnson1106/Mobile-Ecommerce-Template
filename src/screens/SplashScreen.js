@@ -1,8 +1,7 @@
 import React, { Component } from "react";
-import { Image } from "react-native";
 import { Box, Text } from "react-native-design-utility";
 
-import { images } from "../constant/images";
+import OnboardingLogo from "../commons/OnboardingLogo";
 
 class SplashScreen extends Component {
   state = {};
@@ -13,21 +12,13 @@ class SplashScreen extends Component {
 
   checkAuth = () => {
     // setTimeout(() => {
-    //   this.props.navigation.navigate("Auth");
+    this.props.navigation.navigate("Auth");
     // }, 2000);
   };
   render() {
     return (
       <Box f={1} center>
-        <Box mb="sm">
-          <Image source={images.logo} />
-        </Box>
-        <Text size="xxl">
-          In
-          <Text size="xxl" color="green">
-            Store
-          </Text>
-        </Text>
+        <OnboardingLogo />
       </Box>
     );
   }
