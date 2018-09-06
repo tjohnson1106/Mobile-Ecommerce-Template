@@ -76,6 +76,7 @@ const theme = {
   },
   color,
   space: {
+    xxs: 6,
     xs: 8,
     sm: 16,
     md: 24,
@@ -83,9 +84,10 @@ const theme = {
     xl: 40
   },
   radius: {
+    xxs: 3,
     xs: 6,
     sm: 10,
-    base: 14,
+    base: 1,
     lg: 20,
     xl: 30
   },

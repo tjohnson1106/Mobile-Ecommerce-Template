@@ -8,6 +8,7 @@ import {
 import Navigation from "./src/screens";
 import { images } from "./src/constants/images";
 import { cacheImages } from "./src/util/cacheImages";
+import { theme } from "./src/constants/theme";
 
 export default class App extends Component {
   state = {
@@ -19,7 +20,7 @@ export default class App extends Component {
   }
 
   cacheAssets = async () => {
-    const imagesAssets = this.cacheImages(Object.values(images));
+    const imagesAssets = cacheImages(Object.values(images));
 
     await Promise.all([...imagesAssets]);
 
@@ -36,7 +37,7 @@ export default class App extends Component {
     }
 
     return (
-      <UtilityThemeProvider>
+      <UtilityThemeProvider theme={theme}>
         <Navigation />
       </UtilityThemeProvider>
     );
