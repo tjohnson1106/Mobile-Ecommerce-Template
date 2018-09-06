@@ -15,7 +15,8 @@ class LoginScreen extends Component {
         </Box>
 
         <Box f={0.9} w={1}>
-          <LoginButton />
+          <LoginButton>Continue with Google</LoginButton>
+          <LoginButton>Continue with Facebook</LoginButton>
         </Box>
       </Box>
     );
