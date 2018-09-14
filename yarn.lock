@@ -624,7 +624,7 @@
   dependencies:
     cross-spawn "^5.1.0"
 
-"@expo/vector-icons@^6.3.1":
+"@expo/vector-icons@6.3.1", "@expo/vector-icons@^6.3.1":
   version "6.3.1"
   resolved "http://registry.npmjs.org/@expo/vector-icons/-/vector-icons-6.3.1.tgz#ffb97cc2343e4a330b44ce3063ee7c8571a6a50d"
   dependencies:

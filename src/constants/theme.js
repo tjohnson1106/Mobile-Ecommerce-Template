@@ -43,7 +43,7 @@ const color = {
   greenLighter: "#81c784",
   greenLightest: "#a5d6a7",
 
-  googleBlue: "#197602",
+  googleBlue: "#1976D2",
   facebookBlue: "#4D6FA9"
 };
 
